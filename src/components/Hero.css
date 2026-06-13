@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 4rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 8rem;
+}
+
+/* Left */
+.hero__left {
+  flex-shrink: 0;
+  /*margin-right: auto; /* pushes right side away */
+}
+
+/* Right */
+.hero__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 100px;
+  max-width: 520px;
+}
+
+.hero__about-label {
+  font-family: monospace;
+  font-weight: 600;
+  display: flex;
+  margin-top: -100px;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: #545353;
+}
+
+.hero__star {
+  color: #675974;
+  font-size: 2rem;
+}
+
+.hero__headline {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+
+.headline-purple {
+  color: #625481;
+  font-style: italic;
+
+}
+
+.hero__bio {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #555;
+}
+
+.hero__links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.hero__link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  padding: 0.85rem 1.4rem;
+
+  border: 1px solid #d8d5d5;
+  border-radius: 999px;
+
+  background: white;
+
+  color: #1a1a1a;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+
+.hero__link-btn.github:hover {
+  background: #F9F4FD;
+  border-color: #666666;
+ 
+}
+
+.hero__link-btn.linkedin:hover {
+  background: #F9F4FD;
+  border-color: #666666;
+}
+
+.hero__link-btn.email:hover {
+  background: #F9F4FD;
+  border-color: #666666;
+}
+
+

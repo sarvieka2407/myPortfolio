@@ -1,0 +1,121 @@
+.idcard__lanyard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+}
+
+
+.idcard__clip-hook {
+  width: 18px;
+  height: 10px;
+  border: 3px solid #c4b5e0;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  margin-top: -2px;
+}
+
+/* Card */
+.idcard__card {
+  width: 100%;
+  background: #ffffff;
+  height: 570px;
+  border: 1.5px solid #ABA4AA;
+  border-radius: 36px;
+  padding: 1.5rem 1.8rem 1.8rem;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Photo */
+.idcard__photo-wrapper {
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+   
+
+  border: 2px solid #bfb6c4;
+}
+
+.idcard__photo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 40% center !important;
+
+  display: block;
+}
+ 
+/* Name */
+.idcard__name {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+/* Title */
+.idcard__title {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Divider */
+.idcard__divider {
+  width: 100%;
+  height: 1px;
+  font-weight: 400;
+  background-color: #aba4aa;
+  margin-top: 3.8rem;
+  margin-bottom: 0;
+}
+
+/* Info rows */
+.idcard__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 4rem;
+}
+
+.idcard__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.idcard__info-label {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 400;
+  font-family: monospace;
+}
+
+.idcard__info-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.idcard__info-value--accent {
+  color: #9b7fc7;
+}
+
+.idcard__card {
+   transition: transform 0.15s ease-out;
+  will-change: transform;
+}
