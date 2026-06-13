@@ -1,4 +1,4 @@
-import "./components/Projects.css";
+import "./components/projects.css";
 import { projects } from "./data/portfolio";
 
 
