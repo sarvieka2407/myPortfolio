@@ -21,6 +21,8 @@
 }
 
 .projects__title {
+  font-family: "Playfair Display", serif;
+
   font-size: 2rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -64,7 +66,13 @@
   transform: translateY(0);
 }
 
-.projects__card:hover .projects__visual-layer {
+@media (hover: hover) {
+  .projects__card:hover .projects__visual-layer {
+    transform: translateY(-100%);
+  }
+}
+
+.projects__card.projects__card--revealed .projects__visual-layer {
   transform: translateY(-100%);
 }
 
@@ -165,7 +173,13 @@
   align-items: center;
 }
 
-.projects__card:hover .projects__report-layer {
+@media (hover: hover) {
+  .projects__card:hover .projects__report-layer {
+    transform: translateY(0);
+  }
+}
+
+.projects__card.projects__card--revealed .projects__report-layer {
   transform: translateY(0);
 }
 
@@ -263,4 +277,69 @@
 
 .projects__index {
   letter-spacing: 0.08em;
+}
+
+/* Responsive Projects Section */
+@media (max-width: 1024px) {
+  .projects {
+    padding: 4rem 2.5rem;
+  }
+
+  .projects__grid {
+    gap: 1.5rem;
+  }
+  
+  .projects__subtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 1.5rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects__header {
+    margin-bottom: 2rem;
+  }
+
+  .projects__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
+  .projects__title {
+    font-size: 1.75rem;
+  }
+
+  .projects__image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .projects__card-body {
+    padding: 1.2rem 1.2rem 1.4rem;
+  }
+  
+  .projects__report-inner {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .projects__report-desc {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
 }

@@ -1,8 +1,19 @@
+import { useState } from "react";
 import "./components/projects.css";
 import { projects } from "./data/portfolio";
 
 
 export default function Projects() {
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleCardClick = (index, e) => {
+    // If user clicked a link, allow the navigation
+    if (e.target.closest("a")) {
+      return;
+    }
+    setActiveCard(activeCard === index ? null : index);
+  };
+
   return (
     <section id="projects" className="projects">
 
@@ -17,7 +28,11 @@ export default function Projects() {
 
       <div className="projects__grid">
         {projects.map((project, i) => (
-          <div className="projects__card" key={i}>
+          <div
+            className={`projects__card ${activeCard === i ? "projects__card--revealed" : ""}`}
+            key={i}
+            onClick={(e) => handleCardClick(i, e)}
+          >
 
             {/* ── Screenshot layer (slides up on hover) ── */}
             <div className="projects__visual-layer">

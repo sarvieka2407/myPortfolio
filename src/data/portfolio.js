@@ -43,23 +43,6 @@ export const projects = [
 
 ]
 
-leadership: [
-  {
-    role: "Community Lead",
-    organization: "Developer Student Club",
-    duration: "2023 — Present",
-    description:
-      "Led workshops, hackathons and community initiatives for 500+ students."
-  },
-  {
-    role: "Event Coordinator",
-    organization: "Tech Society",
-    duration: "2022 — 2023",
-    description:
-      "Organized technical events, speaker sessions and student outreach programs."
-  }
-]
-
 // src/data/portfolio.js
 export const journey = {
 
@@ -159,19 +142,6 @@ export const journey = {
   ],
 
   achievements: [
-    {
-      title: "AWS Certified Cloud Practitioner",
-      type: "Certification",
-    },
 
-    {
-      title: "1st Place — Design Sprint",
-      type: "Award",
-    },
-
-    {
-      title: "National Hackathon Finalist",
-      type: "Competition",
-    },
   ],
 };
