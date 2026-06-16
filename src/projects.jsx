@@ -18,12 +18,11 @@ export default function Projects() {
     <section id="projects" className="projects">
 
       <div className="projects__header">
-        <span className="projects__eyebrow">PORTFOLIO VOLUME II</span>
-        <h2 className="projects__title">Featured Projects</h2>
-        <p className="projects__subtitle">
-          A curated selection of technical explorations, where clean
-          architecture meets intentional design.
-        </p>
+        <div className="projects__header-chapter">03</div>
+        <div className="projects__header-content">
+          <span className="projects__eyebrow">PORTFOLIO VOLUME III</span>
+          <h2 className="projects__title">Featured Projects</h2>
+        </div>
       </div>
 
       <div className="projects__grid">

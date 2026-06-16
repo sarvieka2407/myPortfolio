@@ -127,21 +127,57 @@ export const journey = {
           proofImages: [
       {
         image: "/proofs/ascent1.jpeg",
-        caption: "Hosted Engineering AMA"
+        caption: ""
       },
       {
         image: "/proofs/ascent2.jpeg",
-        caption: "Hackathon Operations"
+        caption: ""
       },
       {
         image: "/proofs/ascent3.jpeg",
-        caption: "Speaker Session"
+        caption: ""
       }
     ]
     },
   ],
 
   achievements: [
-
+    {
+      title: "Meta OpenEnv Hackathon 2026 - Finalist",
+      organization: " ",
+      year: "2026",
+      badge: "",
+      highlight: "Our team, BugHunters, was selected among the Top 800 finalist teams out of 32,000+ registered teams in the Meta OpenEnv Hackathon, one of India's largest AI hackathons.",
+      context: "Driven by the challenge of building resilient software in rapidly evolving environments, we developed a system that detects API schema drift in payment workflows and proactively prevents failures caused by changing third-party integrations. The solution helps engineering teams identify breaking changes early, reducing integration risks and improving system reliability.",
+      projectName: "DriftGuard",
+      projectDescription: "Multi-agent AI system built during Meta Hackathon to detect and prevent API schema drift in payment processing pipelines. Designed four specialized agents (Persona, Watchdog, Concierge, Judge) that validate webhook payloads, catch breaking API changes, and ensure transaction integrity across multiple payment providers before execution.",
+      metrics: ["REINFORCEMENT LEARNING", "SCHEMA DRIFT", "FINTECH"],
+      certificate: {
+        image: "/proofs/certificate1.png",
+        title: "Meta OpenEnv Hackathon Finalist Certificate",
+        issuer: "Meta",
+        documentType: "Achievement Certificate",
+        category: "Finalist Recognition",
+        year: "2026"
+      },
+      evidence: [
+        {
+          image: "/proofs/meta4.jpeg",
+          caption: ""
+        },
+        {
+          image: "/proofs/meta3.jpeg",
+          caption: ""
+        },
+        {
+          image: "/proofs/meta1.jpeg",
+          caption: ""
+        },
+        {
+          image: "/proofs/meta2.jpeg",
+          caption: ""
+        }
+      ]
+    },
   ],
 };

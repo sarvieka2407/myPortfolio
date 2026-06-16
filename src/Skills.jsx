@@ -6,11 +6,12 @@ export default function Skills() {
       <section id = "skills" className="archive">
 
         <div className="archive__header">
+          <div className="archive__header-chapter">02</div>
+          <div className="archive__header-content">
+          <span className="archive__eyebrow">PORTFOLIO VOLUME II</span>
           <h2 className="archive__title">Technical Skills</h2>
-          <div className="archive__version">
-            SYSTEM_LOG // v1.0.4
-          </div>
         </div>
+      </div>
 
         <div className="archive__cards">
 
